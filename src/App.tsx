@@ -7,8 +7,10 @@ import {
   searchBox as SearchBoxController,
   resultList as ResultListController,
   facet as FacetController,
+  pager as pagerController,
 } from "./controllers/controllers";
 import { headlessEngine } from "./Engine";
+import Pager from "./components/Pager";
 function App() {
   useEffect(() => {
     headlessEngine.executeFirstSearch();
@@ -29,6 +31,7 @@ function App() {
           </div>
           <div className="results-section column">
             <ResultList controller={ResultListController} />
+            <Pager controller={pagerController} />
           </div>
         </div>
       </div>

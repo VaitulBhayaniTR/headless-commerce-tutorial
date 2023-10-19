@@ -170,6 +170,8 @@ button {
 .pager {
   display: flex;
   justify-content: space-evenly;
+  background: #eee;
+  padding:3px
 }
 
 .pager-arrow {
